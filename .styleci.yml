@@ -16,3 +16,5 @@ enabled:
 disabled:
   - short_array_syntax
   - alpha_ordered_imports
+  - short_list_syntax
+  - single_class_element_per_statement
