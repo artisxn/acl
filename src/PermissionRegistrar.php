@@ -4,9 +4,9 @@ namespace Spatie\Permission;
 
 use Illuminate\Cache\CacheManager;
 use Illuminate\Support\Collection;
-use Spatie\Permission\Contracts\Role;
+use CodicaStudio\Permission\Contracts\Role;
 use Illuminate\Contracts\Auth\Access\Gate;
-use Spatie\Permission\Contracts\Permission;
+use CodicaStudio\Permission\Contracts\Permission;
 use Illuminate\Contracts\Auth\Access\Authorizable;
 
 class PermissionRegistrar
@@ -143,7 +143,7 @@ class PermissionRegistrar
     /**
      * Get an instance of the permission class.
      *
-     * @return \Spatie\Permission\Contracts\Permission
+     * @return \CodicaStudio\Permission\Contracts\Permission
      */
     public function getPermissionClass(): Permission
     {
@@ -160,7 +160,7 @@ class PermissionRegistrar
     /**
      * Get an instance of the role class.
      *
-     * @return \Spatie\Permission\Contracts\Role
+     * @return \CodicaStudio\Permission\Contracts\Role
      */
     public function getRoleClass(): Role
     {

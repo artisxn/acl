@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\Permission\Traits;
+namespace CodicaStudio\Permission\Traits;
 
 use Illuminate\Support\Collection;
-use Spatie\Permission\Contracts\Role;
+use CodicaStudio\Permission\Contracts\Role;
 use Illuminate\Database\Eloquent\Builder;
-use Spatie\Permission\PermissionRegistrar;
+use CodicaStudio\Permission\PermissionRegistrar;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 trait HasRoles
@@ -52,7 +52,7 @@ trait HasRoles
      * Scope the model query to certain roles only.
      *
      * @param \Illuminate\Database\Eloquent\Builder $query
-     * @param string|array|\Spatie\Permission\Contracts\Role|\Illuminate\Support\Collection $roles
+     * @param string|array|\CodicaStudio\Permission\Contracts\Role|\Illuminate\Support\Collection $roles
      * @param string $guard
      *
      * @return \Illuminate\Database\Eloquent\Builder
@@ -86,7 +86,7 @@ trait HasRoles
     /**
      * Assign the given role to the model.
      *
-     * @param array|string|\Spatie\Permission\Contracts\Role ...$roles
+     * @param array|string|\CodicaStudio\Permission\Contracts\Role ...$roles
      *
      * @return $this
      */
@@ -138,7 +138,7 @@ trait HasRoles
     /**
      * Revoke the given role from the model.
      *
-     * @param string|\Spatie\Permission\Contracts\Role $role
+     * @param string|\CodicaStudio\Permission\Contracts\Role $role
      */
     public function removeRole($role)
     {
@@ -154,7 +154,7 @@ trait HasRoles
     /**
      * Remove all current roles and set the given ones.
      *
-     * @param  array|\Spatie\Permission\Contracts\Role|string  ...$roles
+     * @param  array|\CodicaStudio\Permission\Contracts\Role|string  ...$roles
      *
      * @return $this
      */
@@ -168,7 +168,7 @@ trait HasRoles
     /**
      * Determine if the model has (one of) the given role(s).
      *
-     * @param string|int|array|\Spatie\Permission\Contracts\Role|\Illuminate\Support\Collection $roles
+     * @param string|int|array|\CodicaStudio\Permission\Contracts\Role|\Illuminate\Support\Collection $roles
      * @param string|null $guard
      * @return bool
      */
@@ -212,7 +212,7 @@ trait HasRoles
      *
      * Alias to hasRole() but without Guard controls
      *
-     * @param string|int|array|\Spatie\Permission\Contracts\Role|\Illuminate\Support\Collection $roles
+     * @param string|int|array|\CodicaStudio\Permission\Contracts\Role|\Illuminate\Support\Collection $roles
      *
      * @return bool
      */
@@ -224,7 +224,7 @@ trait HasRoles
     /**
      * Determine if the model has all of the given role(s).
      *
-     * @param  string|array|\Spatie\Permission\Contracts\Role|\Illuminate\Support\Collection  $roles
+     * @param  string|array|\CodicaStudio\Permission\Contracts\Role|\Illuminate\Support\Collection  $roles
      * @param  string|null  $guard
      * @return bool
      */

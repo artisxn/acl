@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Permission\Middlewares;
+namespace CodicaStudio\Permission\Middlewares;
 
 use Closure;
-use Spatie\Permission\Exceptions\UnauthorizedException;
+use CodicaStudio\Permission\Exceptions\UnauthorizedException;
 
 class PermissionMiddleware
 {

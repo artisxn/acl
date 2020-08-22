@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\Permission\Traits;
+namespace CodicaStudio\Permission\Traits;
 
-use Spatie\Permission\PermissionRegistrar;
+use CodicaStudio\Permission\PermissionRegistrar;
 
 trait RefreshesPermissionCache
 {

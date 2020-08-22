@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\Permission\Test;
+namespace CodicaStudio\Permission\Test;
 
-use Spatie\Permission\Contracts\Role;
-use Spatie\Permission\Models\Permission;
-use Spatie\Permission\Exceptions\RoleDoesNotExist;
-use Spatie\Permission\Exceptions\GuardDoesNotMatch;
-use Spatie\Permission\Exceptions\RoleAlreadyExists;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
+use CodicaStudio\Permission\Contracts\Role;
+use CodicaStudio\Permission\Models\Permission;
+use CodicaStudio\Permission\Exceptions\RoleDoesNotExist;
+use CodicaStudio\Permission\Exceptions\GuardDoesNotMatch;
+use CodicaStudio\Permission\Exceptions\RoleAlreadyExists;
+use CodicaStudio\Permission\Exceptions\PermissionDoesNotExist;
 
 class RoleTest extends TestCase
 {

@@ -3,7 +3,7 @@
 namespace Spatie\Permission;
 
 use Illuminate\Support\Collection;
-use Spatie\Permission\Exceptions\WildcardPermissionNotProperlyFormatted;
+use CodicaStudio\Permission\Exceptions\WildcardPermissionNotProperlyFormatted;
 
 class WildcardPermission
 {

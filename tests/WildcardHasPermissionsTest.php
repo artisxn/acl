@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\Permission\Test;
+namespace CodicaStudio\Permission\Test;
 
-use Spatie\Permission\Models\Permission;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
-use Spatie\Permission\Exceptions\WildcardPermissionInvalidArgument;
-use Spatie\Permission\Exceptions\WildcardPermissionNotProperlyFormatted;
+use CodicaStudio\Permission\Models\Permission;
+use CodicaStudio\Permission\Exceptions\PermissionDoesNotExist;
+use CodicaStudio\Permission\Exceptions\WildcardPermissionInvalidArgument;
+use CodicaStudio\Permission\Exceptions\WildcardPermissionNotProperlyFormatted;
 
 class WildcardHasPermissionsTest extends TestCase
 {

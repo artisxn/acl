@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Permission\Commands;
+namespace CodicaStudio\Permission\Commands;
 
 use Illuminate\Console\Command;
-use Spatie\Permission\PermissionRegistrar;
+use CodicaStudio\Permission\PermissionRegistrar;
 
 class CacheReset extends Command
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Permission\Test;
+namespace CodicaStudio\Permission\Test;
 
-use Spatie\Permission\Contracts\Permission;
-use Spatie\Permission\Exceptions\PermissionAlreadyExists;
+use CodicaStudio\Permission\Contracts\Permission;
+use CodicaStudio\Permission\Exceptions\PermissionAlreadyExists;
 
 class PermissionTest extends TestCase
 {

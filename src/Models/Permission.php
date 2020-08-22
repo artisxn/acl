@@ -1,17 +1,17 @@
 <?php
 
-namespace Spatie\Permission\Models;
+namespace CodicaStudio\Permission\Models;
 
-use Spatie\Permission\Guard;
+use CodicaStudio\Permission\Guard;
 use Illuminate\Support\Collection;
-use Spatie\Permission\Traits\HasRoles;
+use CodicaStudio\Permission\Traits\HasRoles;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\Traits\RefreshesPermissionCache;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
+use CodicaStudio\Permission\PermissionRegistrar;
+use CodicaStudio\Permission\Traits\RefreshesPermissionCache;
+use CodicaStudio\Permission\Exceptions\PermissionDoesNotExist;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Spatie\Permission\Exceptions\PermissionAlreadyExists;
-use Spatie\Permission\Contracts\Permission as PermissionContract;
+use CodicaStudio\Permission\Exceptions\PermissionAlreadyExists;
+use CodicaStudio\Permission\Contracts\Permission as PermissionContract;
 
 class Permission extends Model implements PermissionContract
 {
@@ -78,9 +78,9 @@ class Permission extends Model implements PermissionContract
      * @param string $name
      * @param string|null $guardName
      *
-     * @throws \Spatie\Permission\Exceptions\PermissionDoesNotExist
+     * @throws \CodicaStudio\Permission\Exceptions\PermissionDoesNotExist
      *
-     * @return \Spatie\Permission\Contracts\Permission
+     * @return \CodicaStudio\Permission\Contracts\Permission
      */
     public static function findByName(string $name, $guardName = null): PermissionContract
     {
@@ -99,9 +99,9 @@ class Permission extends Model implements PermissionContract
      * @param int $id
      * @param string|null $guardName
      *
-     * @throws \Spatie\Permission\Exceptions\PermissionDoesNotExist
+     * @throws \CodicaStudio\Permission\Exceptions\PermissionDoesNotExist
      *
-     * @return \Spatie\Permission\Contracts\Permission
+     * @return \CodicaStudio\Permission\Contracts\Permission
      */
     public static function findById(int $id, $guardName = null): PermissionContract
     {
@@ -121,7 +121,7 @@ class Permission extends Model implements PermissionContract
      * @param string $name
      * @param string|null $guardName
      *
-     * @return \Spatie\Permission\Contracts\Permission
+     * @return \CodicaStudio\Permission\Contracts\Permission
      */
     public static function findOrCreate(string $name, $guardName = null): PermissionContract
     {

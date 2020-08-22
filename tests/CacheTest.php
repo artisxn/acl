@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\Permission\Test;
+namespace CodicaStudio\Permission\Test;
 
 use Illuminate\Support\Facades\DB;
-use Spatie\Permission\Contracts\Role;
+use CodicaStudio\Permission\Contracts\Role;
 use Illuminate\Support\Facades\Artisan;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\Contracts\Permission;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
+use CodicaStudio\Permission\PermissionRegistrar;
+use CodicaStudio\Permission\Contracts\Permission;
+use CodicaStudio\Permission\Exceptions\PermissionDoesNotExist;
 
 class CacheTest extends TestCase
 {
@@ -206,7 +206,7 @@ class CacheTest extends TestCase
     public function it_can_reset_the_cache_with_artisan_command()
     {
         Artisan::call('permission:create-permission', ['name' => 'new-permission']);
-        $this->assertCount(1, \Spatie\Permission\Models\Permission::where('name', 'new-permission')->get());
+        $this->assertCount(1, \CodicaStudio\Permission\Models\Permission::where('name', 'new-permission')->get());
 
         $this->resetQueryCount();
         // retrieve permissions, and assert that the cache had to be loaded

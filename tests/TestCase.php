@@ -1,34 +1,34 @@
 <?php
 
-namespace Spatie\Permission\Test;
+namespace CodicaStudio\Permission\Test;
 
 use Illuminate\Support\Facades\Cache;
-use Spatie\Permission\Contracts\Role;
+use CodicaStudio\Permission\Contracts\Role;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\Contracts\Permission;
+use CodicaStudio\Permission\PermissionRegistrar;
+use CodicaStudio\Permission\Contracts\Permission;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\Permission\PermissionServiceProvider;
+use CodicaStudio\Permission\PermissionServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
-    /** @var \Spatie\Permission\Test\User */
+    /** @var \CodicaStudio\Permission\Test\User */
     protected $testUser;
 
-    /** @var \Spatie\Permission\Test\Admin */
+    /** @var \CodicaStudio\Permission\Test\Admin */
     protected $testAdmin;
 
-    /** @var \Spatie\Permission\Models\Role */
+    /** @var \CodicaStudio\Permission\Models\Role */
     protected $testUserRole;
 
-    /** @var \Spatie\Permission\Models\Role */
+    /** @var \CodicaStudio\Permission\Models\Role */
     protected $testAdminRole;
 
-    /** @var \Spatie\Permission\Models\Permission */
+    /** @var \CodicaStudio\Permission\Models\Permission */
     protected $testUserPermission;
 
-    /** @var \Spatie\Permission\Models\Permission */
+    /** @var \CodicaStudio\Permission\Models\Permission */
     protected $testAdminPermission;
 
     public function setUp(): void

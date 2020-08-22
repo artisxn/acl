@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Permission\Test;
+namespace CodicaStudio\Permission\Test;
 
-use Spatie\Permission\Contracts\Role;
-use Spatie\Permission\Exceptions\RoleDoesNotExist;
-use Spatie\Permission\Exceptions\GuardDoesNotMatch;
+use CodicaStudio\Permission\Contracts\Role;
+use CodicaStudio\Permission\Exceptions\RoleDoesNotExist;
+use CodicaStudio\Permission\Exceptions\GuardDoesNotMatch;
 
 class HasRolesTest extends TestCase
 {

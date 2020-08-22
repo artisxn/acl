@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Permission\Test;
+namespace CodicaStudio\Permission\Test;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\Permission\Test;
+namespace CodicaStudio\Permission\Test;
 
-use Spatie\Permission\Models\Permission;
+use CodicaStudio\Permission\Models\Permission;
 
 class MultipleGuardsTest extends TestCase
 {

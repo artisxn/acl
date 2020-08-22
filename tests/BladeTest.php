@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Permission\Test;
+namespace CodicaStudio\Permission\Test;
 
 use Artisan;
-use Spatie\Permission\Contracts\Role;
+use CodicaStudio\Permission\Contracts\Role;
 
 class BladeTest extends TestCase
 {
