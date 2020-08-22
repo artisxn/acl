@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Permission;
+namespace Codicastudio\Permission;
 
 use Illuminate\Cache\CacheManager;
 use Illuminate\Support\Collection;

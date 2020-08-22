@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Permission;
+namespace Codicastudio\Permission;
 
 use Illuminate\Routing\Route;
 use Illuminate\Support\Collection;
