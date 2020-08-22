@@ -1,10 +1,17 @@
+risky: false
+
 preset: laravel
 
+version: 7
+
+tab-width: 4
+
+use-tabs: true
+
 enabled:
-- length_ordered_imports
-- long_list_syntax
+  - long_array_syntax
+  - length_ordered_imports
+  - long_list_syntax
 
 disabled:
-- short_list_syntax
-- alpha_ordered_imports
-- single_class_element_per_statement
+  - short_array_syntax
