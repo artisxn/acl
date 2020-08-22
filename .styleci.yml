@@ -1,3 +1,14 @@
+preset: laravel
+
+enabled:
+- length_ordered_imports
+- long_list_syntax
+
+disabled:
+- short_list_syntax
+- alpha_ordered_imports
+- single_class_element_per_statement
+
 risky: false
 
 preset: laravel
@@ -15,3 +26,4 @@ enabled:
 
 disabled:
   - short_array_syntax
+  - alpha_ordered_imports
