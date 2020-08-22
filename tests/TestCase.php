@@ -1,6 +1,6 @@
 <?php
 
-namespace CodicaStudio\Permission\Test;
+namespace CodicaStudio\Permission\Tests;
 
 use Illuminate\Support\Facades\Cache;
 use CodicaStudio\Permission\Contracts\Role;
@@ -13,10 +13,10 @@ use CodicaStudio\Permission\PermissionServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
-    /** @var \CodicaStudio\Permission\Test\User */
+    /** @var \CodicaStudio\Permission\Tests\User */
     protected $testUser;
 
-    /** @var \CodicaStudio\Permission\Test\Admin */
+    /** @var \CodicaStudio\Permission\Tests\Admin */
     protected $testAdmin;
 
     /** @var \CodicaStudio\Permission\Models\Role */
