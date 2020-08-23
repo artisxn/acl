@@ -9,6 +9,9 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false">
+        <logging>
+            <log type="coverage-php" target="build/cov/coverage.cov"/>
+        </logging>
     <testsuites>
         <testsuite name="Permissions Test Suite">
             <directory>tests</directory>
